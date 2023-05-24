@@ -1,5 +1,6 @@
 package com.bridgelabz.employeepayrollapp.dto;
 
+<<<<<<< HEAD
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
@@ -14,5 +15,9 @@ public class EmployeeDTO {
     public String name;
 
     @Min(value = 500, message = "Salray shoild be greater than 500")
+=======
+public class EmployeeDTO {
+    public String name;
+>>>>>>> remote-2/master
     public double salary;
 }

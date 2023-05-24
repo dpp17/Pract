@@ -1,7 +1,10 @@
 package com.bridgelabz.employeepayrollapp.services;
 
 import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
+<<<<<<< HEAD
 import com.bridgelabz.employeepayrollapp.exception.EmployeePayrollCustomException;
+=======
+>>>>>>> remote-2/master
 import com.bridgelabz.employeepayrollapp.model.EmployeeData;
 import com.bridgelabz.employeepayrollapp.repository.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +12,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+<<<<<<< HEAD
 import java.util.Optional;
+=======
+>>>>>>> remote-2/master
 
 @Service
 public class EmployeeServiceImp implements IEmployeeServices{
@@ -23,6 +29,7 @@ public class EmployeeServiceImp implements IEmployeeServices{
     public EmployeeData addEmployee(EmployeeDTO employeeDTO) {
         EmployeeData empData = new EmployeeData(employeeDTO);
           list.add(empData);
+<<<<<<< HEAD
         return empRepo.save(empData);
     }
 
@@ -70,4 +77,9 @@ public class EmployeeServiceImp implements IEmployeeServices{
     }
 
 
+=======
+//         empRepo.save(empData);
+        return empData;
+    }
+>>>>>>> remote-2/master
 }

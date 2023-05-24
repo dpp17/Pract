@@ -4,9 +4,16 @@ import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
 import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
 import com.bridgelabz.employeepayrollapp.model.EmployeeData;
 import com.bridgelabz.employeepayrollapp.services.IEmployeeServices;
+<<<<<<< HEAD
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+>>>>>>> remote-2/master
 
 import java.util.List;
 
@@ -15,13 +22,19 @@ public class EmployeeController {
     @Autowired
     private IEmployeeServices iEmployeeServices;
 
+<<<<<<< HEAD
     //////////////////// ::  Save Description  :: ////////////////////
     @PostMapping("/add")
     public ResponseDTO addEmployee(@Valid @RequestBody EmployeeDTO employeeDTO){
+=======
+    @PostMapping("/add")
+    public ResponseDTO addEmployee(@RequestBody EmployeeDTO employeeDTO){
+>>>>>>> remote-2/master
         EmployeeData empData = iEmployeeServices.addEmployee(employeeDTO);
         ResponseDTO responseDTO = new ResponseDTO("Data added Successfully", empData);
         return responseDTO;
     }
+<<<<<<< HEAD
 
     //////////////////// ::  Get Description By Id :: ////////////////////
     @GetMapping("/getEmp/{id}")
@@ -55,4 +68,6 @@ public class EmployeeController {
     }
 
 
+=======
+>>>>>>> remote-2/master
 }
